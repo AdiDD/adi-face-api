@@ -43,6 +43,6 @@ app.post("/imageUrl", image.handleApiCall);
 
 app.put("/image", image.handleImage(db));
 
-const port = provess.env.PORT || 3000;
+const port = process.env.PORT || 3000;
 
 app.listen(port, () => console.log("App is running on port " + port));
